@@ -1663,9 +1663,9 @@ local UserInfo = LuaTele.getUser(msg.sender_id.user_id)
 if msg.sender_id.user_id ~= 1333402062 then 
 
 local names = (UserInfo.first_name or '...')..(UserInfo.last_name or '...')
-if names and  names:find("𝐀𝐁𝐁𝐀𝐒 𝐅𝐀𝐃𝐇𝐈𝐋") then
+if names and  names:find("𝐀𝐁𝐎𝐃 𝐀𝐋_𝐓𝐀𝐄𝐄") then
 LuaTele.deleteMessages(msg.chat_id,{[1]= msg.id})
-return LuaTele.sendText(msg_chat_id,0,'⚝╂[هلو حبيبي ، ميصير تنتحل مطور السورس](tg://user?id='..msg.sender_id.user_id..')\n\n⚝╂حساب مطور السورس الاصلي هذا @abbasfadhil\n\n ⚝╂او تكدر تكتب المبرمج وراح يطلعلك حساب مطور السورس',"md")
+return LuaTele.sendText(msg_chat_id,0,'⚝╂[هلو حبيبي ، ميصير تنتحل مطور السورس](tg://user?id='..msg.sender_id.user_id..')\n\n⚝╂حساب مطور السورس الاصلي هذا @T71TT\n\n ⚝╂او تكدر تكتب المبرمج وراح يطلعلك حساب مطور السورس',"md")
 end
 end
 if msg.content.location and not msg.Distinguished then  -- الموقع
@@ -2417,7 +2417,7 @@ return LuaTele.sendText(msg_chat_id,msg_id,Teext..'⚝╂ممنوع ارسال �
 end
 end
 end
-if text and (text:match("خره بالله") or text:match("خبربك") or text:match("كسدينربك") or text:match("خرب بالله") or text:match("خرب الله") or text:match("خره بربك") or text:match("الله الكواد") or text:match("خره بمحمد") or text:match("كسم الله") or text:match("كسم ربك") or text:match("كسربك") or text:match("كسختالله") or text:match("كسخت الله") or text:match("خره بدينك") or text:match("خرهبدينك") or text:match("كسالله") or text:match("خربالله")) and not msg.Distinguished then 
+if text and (text:match("خره بالله") or text:match("خرب ربك") or text:match("كسدينربك") or text:match("خرب بالله") or text:match("خرب الله") or text:match("خره بربك") or text:match("الله الكواد") or text:match("خره بمحمد") or text:match("كسم الله") or text:match("كسم ربك") or text:match("كسربك") or text:match("كسختالله") or text:match("كسخت الله") or text:match("خره بدينك") or text:match("خرهبدينك") or text:match("كسالله") or text:match("خربالله")) and not msg.Distinguished then 
 local phsharr_Group = Redis:get(FALCON.."FALCON:Lock:alkfr"..msg_chat_id)
 if phsharr_Group then
 LuaTele.deleteMessages(msg.chat_id,{[1]= msg.id})
@@ -5404,7 +5404,7 @@ if not msg.ControllerBot then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*⚝╂هذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
 --os.execute('rm -rf FALCON.lua')
---download('curl -s https://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@raw.githubusercontent.com/FALCONTAME/FALCON/main/FALCON.lua -o FALCON.lua')
+--download('curl -s https://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@raw.githubusercontent.com/FALCONTAME/FALCON/main/FALCON.lua -o FALCON.lua')
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*⚝╂تم تحديث السورس * ',"md",true)  
 end
 if text == 'السيرفر' and ChCheck(msg) or text == 'السيرفر ᨒ' and ChCheck(msg) then
@@ -12115,7 +12115,7 @@ local TestText = "*⚝╂𝙽𝙰𝙼𝙴 𝚂𝚄𝙳𝙾 : * ["..UserInfo.firs
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = UserInfo.first_name, url = 't.me/'..UserSudo}},}}
 LuaTele.sendPhoto(msg.chat_id, msg.id, photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id, TestText, "md", true, nil, nil, nil, nil, nil, nil, nil, nil, reply_markup)
 else
-local TestText = "*⚝╂𝙽𝙰𝙼𝙴 𝚂𝚄𝙳𝙾 : * ["..UserInfo.first_name.."](tg://user?id="..Sudo_Id..") .\n*⚝╂𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴 𝚂𝚄𝙳𝙾 : @"..UserSudo.."*\n*⚝╂𝙸𝙳 𝚂𝚄𝙳𝙾 : *"..Sudo_Id.." .\n*⚝╂𝙱𝙸𝙾 𝚂𝚄𝙳𝙾 : * ["..Bio.."] ."
+local TestText = "*⚝╂𝙽𝙰𝙼𝙴 𝚂𝚄𝙳𝙾 : * ["..UserInfo.first_name.."](tg://user?id="..Sudo_Id..") .\n*⚝╂𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴 𝚂𝚄𝙳𝙾 : @"..UserSudo.."*\n*⚝╂𝙸𝙳 𝚂𝚄𝙳𝙾 : *"..Sudo_Id.." .\n*⚝╂𝙱𝙸?? 𝚂𝚄??𝙾 : * ["..Bio.."] ."
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text =UserInfo.first_name, url = 't.me/'..UserSudo}},}}	
 LuaTele.sendText(msg_chat_id,msg_id,TestText,"md", true, false, false, false, reply_markup)
 end
@@ -20355,11 +20355,11 @@ end
 
 
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
-photo = "https://t.me/jll0e/28658"
+photo = "https://t.me/jll0e/31"
 local T =[[
-╔━━━━━━━𓄼•𒀭•𓄹━━━━━━╗ 
-┇         [⦑ َِ𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ⦒](http://t.me/jll0e)             ┇
-╚━━━━━━━𓄼•𒀭•𓄹━━━━━━╝ 
+╔━━━━━━━𓄼•ᨒ•𓄹━━━━━━╗ 
+┇         [⦑ َِ𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ⦒](http://t.me/jll0e)             ┇
+╚━━━━━━━𓄼•ᨒ•𓄹━━━━━━╝ 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -20367,10 +20367,10 @@ keyboard.inline_keyboard = {
 {text = ' ✘ المطور .', url = "https://t.me/T71TT"}
 },
 {
-{text = 'لتنصيب', url = "https://t.me/T71TT"}
+{text = 'برمجة تطبيقات', url = "https://t.me/T71TT"}
 },
 {
-{text = ' سورس فالكون ', url = "https://t.me/jll0e"}
+{text = '  ✘ سورس فالكون.', url = "https://t.me/jll0e "}
 },
 }
 local msgg = msg_id/2097152/0.5
@@ -20978,7 +20978,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ', url = 't.me/jll0e'}, 
+{text = '𝐇𝐒??‌ 𝑺𝑶𝑼𝑹𝑪𝑬 ™® ', url = 't.me/jll0e'}, 
 },
 }
 }
