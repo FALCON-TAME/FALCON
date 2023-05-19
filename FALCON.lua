@@ -1412,7 +1412,7 @@ if UserInfoo.first_name == "" then
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url='t.me/jll0e'},
+{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url='t.me/T71lT'},
 },
 }
 else
@@ -1968,7 +1968,7 @@ TextBot = '\n*⚝╂اهلا انآ بوت اسمي '..Bot_Name..''..
 keyboard = {} 
 keyboard.inline_keyboard = {
   {{text="ᨒغادر ᨒ",callback_data="/LeaveBotPic:"..msg.sender_id.user_id},{text = 'ᨒتفعيل ᨒ', callback_data = msg.sender_id.user_id..'/onlinebott'..msg_chat_id}},
-	{{text = '‹ 𝖳𝖾𝖠𝗆 𝖣𝖾𝖿𝗈 › .',url="t.me/jll0e"}},
+	{{text = '‹ 𝖳𝖾𝖠𝗆 𝖣𝖾𝖿𝗈 › .',url="t.me/T71lT"}},
 }
 local msg_id = msg.id/2097152/0.5
 return https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id=' .. msg.chat_id .. '&photo='..idephoto..'&caption=' .. URL.escape(TextBot).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -1983,7 +1983,7 @@ TextBot = '\n*⚝╂اهلا انآ بوت اسمي '..Bot_Name..''..
 keyboard = {} 
 keyboard.inline_keyboard = {
   {{text="ᨒغادر ᨒ",callback_data="/LeaveBotPic:"..msg.sender_id.user_id},{text = 'ᨒتفعيل ᨒ', callback_data = msg.sender_id.user_id..'/onlinebott'..msg_chat_id}},
-	{{text = '‹ 𝖳𝖾𝖠𝗆 𝖣𝖾𝖿𝗈 › .',url="t.me/jll0e"}},
+	{{text = '‹ 𝖳𝖾𝖠𝗆 𝖣𝖾𝖿𝗈 › .',url="t.me/T71lT"}},
 }
 local msg_id = msg.id/2097152/0.5
 return https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id=' .. msg.chat_id .. '&photo='..photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id..'&caption=' .. URL.escape(TextBot).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -5269,7 +5269,7 @@ return LuaTele.sendText(msg_chat_id,msg_id,'\n*⚝╂هذا الامر يخص { 
 end
 if not Redis:get(FALCON..'Abs:ChId') then
 Redis:set(FALCON..'FALCON:Channel:Redis'..msg_chat_id..':'..msg.sender_id.user_id,true)
-return LuaTele.sendText(msg_chat_id,msg_id,"\n⚝╂اهلا بك عزيزي ، \n⚝╂ارفع البوت مشرف في قناتك\n⚝╂ثم ارسل معرف القناة\n⚝╂مثال على معرف القناة 👇\n⚝╂@jll0e\n⚝╂او قم باعادة توجيه رساله من القناة الخاصه او العامه","md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,"\n⚝╂اهلا بك عزيزي ، \n⚝╂ارفع البوت مشرف في قناتك\n⚝╂ثم ارسل معرف القناة\n⚝╂مثال على معرف القناة 👇\n⚝╂@T71lT\n⚝╂او قم باعادة توجيه رساله من القناة الخاصه او العامه","md",true)  
 else
 local Check = https.request('https://api.telegram.org/bot'..Token..'/getChat?chat_id='..Redis:get(FALCON.."Abs:ChId"))
 local GetInfo = JSON.decode(Check)
@@ -5293,7 +5293,7 @@ if not msg.ControllerBot then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*⚝╂هذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
 Redis:set(FALCON..'FALCON:Channel:Redis'..msg_chat_id..':'..msg.sender_id.user_id,true)
-return LuaTele.sendText(msg_chat_id,msg_id,"\n⚝╂اهلا بك عزيزي ، \n⚝╂ارفع البوت مشرف في قناتك\n⚝╂ثم ارسل معرف القناة\n⚝╂مثال على معرف القناة 👇\n⚝╂@jll0e\n⚝╂او قم باعادة توجيه رساله من القناة الخاصه او العامه","md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,"\n⚝╂اهلا بك عزيزي ، \n⚝╂ارفع البوت مشرف في قناتك\n⚝╂ثم ارسل معرف القناة\n⚝╂مثال على معرف القناة 👇\n⚝╂@T71lT\n⚝╂او قم باعادة توجيه رساله من القناة الخاصه او العامه","md",true)  
 end
 if text == 'الاشتراك الاجباري' and ChCheck(msg) or text == 'الاشتراك الاجباري ᨒ' and ChCheck(msg) then
 if not msg.ControllerBot then 
@@ -8334,12 +8334,12 @@ Redis:del(FALCON.."Bots:ProNames:UserNum"..msg.chat_id..msg.sender_id.user_id)
 if UserInfo.username then
 UserInfousername = ''..UserInfo.username..''
 else
-UserInfousername = 'jll0e'
+UserInfousername = 'T71lT'
 end
-LuaTele.sendText(msg.chat_id, msg.id, "⌁︙العضو ↫ ["..UserInfo.first_name.."](https://t.me/"..(UserInfousername or "jll0e")..")\n⌁︙تم كتمه بسبب عدم وضع توحيد المجموعه بجانب اسمه يجب عليه وضع التوحيد ","md",true)
+LuaTele.sendText(msg.chat_id, msg.id, "⌁︙العضو ↫ ["..UserInfo.first_name.."](https://t.me/"..(UserInfousername or "T71lT")..")\n⌁︙تم كتمه بسبب عدم وضع توحيد المجموعه بجانب اسمه يجب عليه وضع التوحيد ","md",true)
 else 
 Redis:incrby(FALCON.."Bots:ProNames:UserNum"..msg.chat_id..msg.sender_id.user_id,1)
-LuaTele.sendText(msg.chat_id, msg.id,  "⌁︙عذرا عزيزي ↫ ["..UserInfo.first_name.."](https://t.me/"..(UserInfousername or "jll0e")..")\n⌁︙عليك وضع التوحيد ↫ "..Redis:get(FALCON.."Bots:ProNames:Txt"..msg.chat_id).." بجانب اسمك\n⌁︙عدد المحاولات المتبقيه ↫ "..(tonumber(ProNamesTxt) - tonumber(UserNum)).."","md",true)
+LuaTele.sendText(msg.chat_id, msg.id,  "⌁︙عذرا عزيزي ↫ ["..UserInfo.first_name.."](https://t.me/"..(UserInfousername or "T71lT")..")\n⌁︙عليك وضع التوحيد ↫ "..Redis:get(FALCON.."Bots:ProNames:Txt"..msg.chat_id).." بجانب اسمك\n⌁︙عدد المحاولات المتبقيه ↫ "..(tonumber(ProNamesTxt) - tonumber(UserNum)).."","md",true)
 end
 end
 end
@@ -12065,7 +12065,7 @@ local TestText = "*⚝╂𝙳𝙴𝚅 𝙽𝙰𝙼𝙴 : * ["..UserInfo.first_na
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url='https://t.me/jll0e'},
+{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url='https://t.me/T71lT'},
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -12075,7 +12075,7 @@ local TestText = "- معلومات مطور السورس : \n\n*⚝╂name:* [".
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url='https://t.me/jll0e'},
+{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url='https://t.me/T71lT'},
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -12106,7 +12106,7 @@ local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {
 }}
 LuaTele.sendPhoto(msg.chat_id, msg.id, photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id, TextingDevBot, "md", true, nil, nil, nil, nil, nil, nil, nil, nil, reply_markup)
 else
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text =UserInfo.first_name, url = 't.me/'..UserSudo}},{{text = '‹ 𝖳𝖾𝖠𝗆 𝖣𝖾𝖿𝗈 › .',url="t.me/jll0e"}},}}	
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text =UserInfo.first_name, url = 't.me/'..UserSudo}},{{text = '‹ 𝖳𝖾𝖠𝗆 𝖣𝖾𝖿𝗈 › .',url="t.me/T71lT"}},}}	
 LuaTele.sendText(msg_chat_id,msg_id,TextingDevBot,"md", true, false, false, false, reply_markup)
 end
 else
@@ -14905,7 +14905,7 @@ Abs = math.random(2,140);
 local Text ='*ᨒ‍︙تم اختيار الشعر الاغنيه فقط*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ',url="t.me/jll0e"}},
+{{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ',url="t.me/T71lT"}},
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/TEAMSUL/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -14915,7 +14915,7 @@ Abs = math.random(2,140);
 local Text ='*ᨒ‍︙تم اختيار الشعر لك فقط*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ',url="t.me/jll0e"}},
+{{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ',url="t.me/T71lT"}},
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/L1BBBL/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -14925,7 +14925,7 @@ Abs = math.random(3,154);
 local Text ='* ✘︙تم اختيار المتحركه لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = ' 𝒂𝒍𝒆𝒊𝒙𝒂𝒏𝒅𝒆𝒓 𐃙 ',url="t.me/jll0e "}},
+{{text = ' 𝐀𝐁𝐎𝐃 𝐀𝐋_𝐓𝐀𝐄𝐄 𐃙 ',url="t.me/T71lT "}},
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendanimation?chat_id=' .. msg.chat_id .. '&animation=https://t.me/LKKKKR/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown") 
@@ -14936,7 +14936,7 @@ mka = math.random(4,341);
 local Text ='*✘︙تم اختيار مزج لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝒂𝒍𝒆𝒊𝒙𝒂𝒏𝒅𝒆𝒓 𐃙',url="t.me/jll0e"}},
+{{text = '𝐀𝐁𝐎𝐃 𝐀𝐋_𝐓𝐀𝐄𝐄 𐃙',url="t.me/T71lT"}},
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&Voice=https://t.me/yypyi/'..mka..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown") 
@@ -14948,7 +14948,7 @@ Abs = math.random(2,220);
 local Text ='*⚝╂تم اختيار مقطع الميمز لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ',url="t.me/jll0e"}},
+{{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ',url="t.me/T71lT"}},
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/MemzWaTaN/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown") 
@@ -14959,7 +14959,7 @@ Abs = math.random(2,400);
 local Text ='*⚝╂تم اختيار الريمكس لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ',url="t.me/jll0e"}},
+{{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ',url="t.me/T71lT"}},
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/RemixWaTaN/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown") 
@@ -14971,7 +14971,7 @@ Abs = math.random(4,1120);
 local Text ='*⚝╂تم اختيار الصوره لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ',url="t.me/jll0e"}},
+{{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ',url="t.me/T71lT"}},
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/PhotosWaTaN/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown") 
@@ -14983,7 +14983,7 @@ Abs = math.random(3,998);
 local Text ='*⚝╂تم اختيار صورة الانمي لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ',url="t.me/jll0e"}},
+{{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ',url="t.me/T71lT"}},
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/AnimeWaTaN/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown") 
@@ -14995,7 +14995,7 @@ Abs = math.random(4,80);
 local Text ='*⚝╂تم اختيار الفلم لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ',url="t.me/jll0e"}},
+{{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ',url="t.me/T71lT"}},
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/MoviesWaTaN/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown") 
@@ -15006,7 +15006,7 @@ Abs = math.random(2,54);
 local Text ='*⚝╂تم اختيار المسلسل لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ',url="t.me/jll0e"}},
+{{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ',url="t.me/T71lT"}},
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/SeriesWaTaN/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown") 
@@ -16465,7 +16465,7 @@ data = {
 {text = '{ نعم }', data = msg.sender_id.user_id..'/Nzlne'},{text = '{ لا }', data = msg.sender_id.user_id..'/noNzlne'},
 },
 {
-{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/jll0e'}, 
+{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/T71lT'}, 
 },
 }
 }
@@ -18417,7 +18417,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/jll0e'}, 
+{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/T71lT'}, 
 },
 }
 }
@@ -20355,10 +20355,10 @@ end
 
 
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
-photo = "https://t.me/jll0e/29205"
+photo = "https://t.me/T71lT/4"
 local T =[[
 ╔━━━━━━━𓄼•𒀭•𓄹━━━━━━╗ 
-┇         [⦑ َِ𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ⦒](http://t.me/jll0e)             ┇
+┇         [⦑ َِ𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ⦒](https://t.me/T71lT)             ┇
 ╚━━━━━━━𓄼•𒀭•𓄹━━━━━━╝ 
 ]]
 keyboard = {} 
@@ -20370,7 +20370,7 @@ keyboard.inline_keyboard = {
 {text = 'لتنصيب', url = "https://t.me/T71TT"}
 },
 {
-{text = ' سورس فالكون ', url = "https://t.me/jll0e"}
+{text = ' سورس فالكون ', url = "https://t.me/T71lT"}
 },
 }
 local msgg = msg_id/2097152/0.5
@@ -20403,7 +20403,7 @@ data = {
 {text = '{ القفل / الفتح }', data = msg.sender_id.user_id..'/NoNextSeting'}, {text = '{ التعطيل / التفعيل }', data = msg.sender_id.user_id..'/listalFALCONorrem'}, 
 },
 {
-{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/jll0e'}, 
+{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/T71lT'}, 
 },
 }
 }
@@ -20431,7 +20431,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/jll0e'}, 
+{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/T71lT'}, 
 },
 }
 }
@@ -20558,7 +20558,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/jll0e'}, 
+{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/T71lT'}, 
 },
 }
 }
@@ -20595,7 +20595,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/jll0e'}, 
+{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/T71lT'}, 
 },
 }
 }
@@ -20642,7 +20642,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/jll0e'}, 
+{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/T71lT'}, 
 },
 }
 }
@@ -20687,7 +20687,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/jll0e'}, 
+{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/T71lT'}, 
 },
 }
 }
@@ -20767,7 +20767,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/jll0e'}, 
+{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/T71lT'}, 
 },
 }
 }
@@ -20838,7 +20838,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/jll0e'}, 
+{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/T71lT'}, 
 },
 }
 }
@@ -20893,7 +20893,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/jll0e'}, 
+{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/T71lT'}, 
 },
 }
 }
@@ -20926,7 +20926,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/jll0e'}, 
+{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/T71lT'}, 
 },
 }
 }
@@ -20978,7 +20978,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ', url = 't.me/jll0e'}, 
+{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ', url = 't.me/T71lT'}, 
 },
 }
 }
@@ -22274,7 +22274,7 @@ keyboardd.inline_keyboard = {
 {text = '➕ اضفني لمجموعتك', url = 't.me/'..UserBot..'?startgroup=new'}, 
 },
 {
-{text = '- لتنصيب بوت', url = 'https://t.me/jll0e'},{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/jll0e'}, 
+{text = '- لتنصيب بوت', url = 'https://t.me/T71lT'},{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/T71lT'}, 
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -22295,7 +22295,7 @@ data = {
 {text = '➕ اضفني لمجموعتك', url = 't.me/'..UserBot..'?startgroup=new'}, 
 },
 {
-{text = '- لتنصيب بوت', url = 'https://t.me/jll0e'},{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/jll0e'}, 
+{text = '- لتنصيب بوت', url = 'https://t.me/T71lT'},{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/T71lT'}, 
 },
 }
 }
@@ -22309,10 +22309,10 @@ data = {
 {text = '➕ اضفني لمجموعتك', url = 't.me/'..UserBot..'?startgroup=new'}, 
 },
 {
-{text = '- لتنصيب بوت', url = 'https://t.me/jll0e'}, 
+{text = '- لتنصيب بوت', url = 'https://t.me/T71lT'}, 
 },
 {
-{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/jll0e'}, 
+{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/T71lT'}, 
 },
 }
 }
@@ -22407,7 +22407,7 @@ data = {
 },
 }
 }
-return LuaTele.sendText(msg_chat_id,msg_id,' ✘︙اهلا بك عزيزي المطور\n ✘︙اليك اوامر الكيبورد الخاصه بك\n ✘︙تابع قناة السورس لتصلك اخر المنشورات @jll0e \n ✘︙تابع قناة التحديثات لتصلك اخر المنشورات @T71TT', 'md', false, false, false, false, reply_markup)
+return LuaTele.sendText(msg_chat_id,msg_id,' ✘︙اهلا بك عزيزي المطور\n ✘︙اليك اوامر الكيبورد الخاصه بك\n ✘︙تابع قناة السورس لتصلك اخر المنشورات @T71lT \n ✘︙تابع قناة التحديثات لتصلك اخر المنشورات @T71TT', 'md', false, false, false, false, reply_markup)
 end
 end
 
@@ -25526,7 +25526,7 @@ data = {
 {text = '{ القائمه الرئيسيه }', data = IdUser..'/helpall'},
 },
 {
-{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/jll0e'}, 
+{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/T71lT'}, 
 },
 }
 }
@@ -25587,7 +25587,7 @@ data = {
 {text = '{ القائمه الرئيسيه }', data = IdUser..'/helpall'},
 },
 {
-{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/jll0e'}, 
+{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/T71lT'}, 
 },
 }
 }
@@ -25683,7 +25683,7 @@ data = {
 {text = '{ القائمه الرئيسيه }', data = IdUser..'/helpall'},
 },
 {
-{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/jll0e'}, 
+{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/T71lT'}, 
 },
 }
 }
@@ -25770,7 +25770,7 @@ data = {
 {text = '{ القائمه الرئيسيه }', data = IdUser..'/helpall'},
 },
 {
-{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/jll0e'}, 
+{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/T71lT'}, 
 },
 }
 }
@@ -25841,7 +25841,7 @@ data = {
 {text = '{ القائمه الرئيسيه }', data = IdUser..'/helpall'},
 },
 {
-{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/jll0e'}, 
+{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/T71lT'}, 
 },
 }
 }
@@ -25890,7 +25890,7 @@ data = {
 {text = '{ القائمه الرئيسيه }', data = IdUser..'/helpall'},
 },
 {
-{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/jll0e'}, 
+{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/T71lT'}, 
 },
 }
 }
@@ -25958,7 +25958,7 @@ data = {
 {text = '{ القائمه الرئيسيه }', data = IdUser..'/helpall'},
 },
 {
-{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/jll0e'}, 
+{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/T71lT'}, 
 },
 }
 }
@@ -26028,7 +26028,7 @@ data = {
 {text = '{ القفل / الفتح }', data = IdUser..'/NoNextSeting'}, {text = '{ التعطيل / التفعيل }', data = IdUser..'/listalFALCONorrem'}, 
 },
 {
-{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/jll0e'}, 
+{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/T71lT'}, 
 },
 }
 }
@@ -26072,7 +26072,7 @@ data = {
 {text = '{ القفل / الفتح }', data = IdUser..'/NoNextSeting'}, {text = '{ التعطيل / التفعيل }', data = IdUser..'/listalFALCONorrem'}, 
 },
 {
-{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/jll0e'}, 
+{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/T71lT'}, 
 },
 }
 }
@@ -26215,7 +26215,7 @@ data = {
 {text = '{ القفل / الفتح }', data = IdUser..'/NoNextSeting'}, {text = '{ التعطيل / التفعيل }', data = IdUser..'/listalFALCONorrem'}, 
 },
 {
-{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/jll0e'}, 
+{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/T71lT'}, 
 },
 }
 }
@@ -26268,7 +26268,7 @@ data = {
 {text = '{ القفل / الفتح }', data = IdUser..'/NoNextSeting'}, {text = '{ التعطيل / التفعيل }', data = IdUser..'/listalFALCONorrem'}, 
 },
 {
-{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/jll0e'}, 
+{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ', url = 't.me/T71lT'}, 
 },
 }
 }
@@ -27093,7 +27093,7 @@ if Text and Text:match('(%d+)/onlinebott(.*)') then
   keyboard = {} 
   keyboard.inline_keyboard = {
     {{text="ᨒغادر ᨒ",callback_data="/LeaveBotPic:"..IdUser},{text="ᨒتعطيل ᨒ",callback_data= IdUser..'/offlinebotPic'..ChatId}},
-    {{text = '‹ 𝖳𝖾𝖠𝗆 𝖣𝖾𝖿𝗈 › .',url="t.me/jll0e"}},
+    {{text = '‹ 𝖳𝖾𝖠𝗆 𝖣𝖾𝖿𝗈 › .',url="t.me/T71lT"}},
   }
   local mm = Msg_id/2097152/0.5
   https.request("https://api.telegram.org/bot"..Token..'/EditMessagecaption?chat_id='..ChatId..'&message_id='..mm..'&caption=' .. URL.escape(txxt).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -27111,7 +27111,7 @@ if Text and Text:match('(%d+)/onlinebott(.*)') then
   keyboard = {} 
   keyboard.inline_keyboard = {
     {{text="ᨒغادر ᨒ",callback_data="/LeaveBotPic:"..IdUser},{text="ᨒتفعيل ᨒ",callback_data= IdUser..'/onlinebott'..ChatId}},
-    {{text = '‹ 𝖳𝖾𝖠𝗆 𝖣𝖾𝖿𝗈 › .',url="t.me/jll0e"}},
+    {{text = '‹ 𝖳𝖾𝖠𝗆 𝖣𝖾𝖿𝗈 › .',url="t.me/T71lT"}},
   }
   local mm = Msg_id/2097152/0.5
   https.request("https://api.telegram.org/bot"..Token..'/EditMessagecaption?chat_id='..ChatId..'&message_id='..mm..'&caption=' .. URL.escape(txxt).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -27138,7 +27138,7 @@ if Text and Text:match('(%d+)/onlinebott(.*)') then
   keyboard = {} 
   keyboard.inline_keyboard = {
     {{text="ᨒغادر ᨒ",callback_data="/LeaveBotPic:"..IdUser},{text="ᨒتفعيل ᨒ",callback_data= IdUser..'/onlinebott'..ChatId}},
-    {{text = '‹ 𝖳𝖾𝖠𝗆 𝖣𝖾𝖿𝗈 › .',url="t.me/jll0e"}},
+    {{text = '‹ 𝖳𝖾𝖠𝗆 𝖣𝖾𝖿𝗈 › .',url="t.me/T71lT"}},
   }
   local mm = Msg_id/2097152/0.5
   https.request("https://api.telegram.org/bot"..Token..'/EditMessagecaption?chat_id='..ChatId..'&message_id='..mm..'&caption=' .. URL.escape(txxt).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -27152,7 +27152,7 @@ if Text and Text:match('(%d+)/onlinebott(.*)') then
   local txxt = "⚝╂تم مغادره البوت من المجموعة"
   keyboard = {} 
   keyboard.inline_keyboard = {
-    {{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ',url="t.me/jll0e"}},
+    {{text = '𝑇𝐻𝐸 𝐹𝐴𝐿𝐶𝑂𝑁🦅 ᨒ ',url="t.me/T71lT"}},
   }
   local mm = Msg_id/2097152/0.5
   https.request("https://api.telegram.org/bot"..Token..'/EditMessagecaption?chat_id='..ChatId..'&message_id='..mm..'&caption=' .. URL.escape(txxt).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
